@@ -1,0 +1,11 @@
+# Copyright 2022 David
+# See LICENSE file for licensing details.
+
+# For a complete list of supported options, see:
+# https://juju.is/docs/sdk/metadata-reference
+name: osm-libs
+display-name: OSM Libs
+description: |
+  A placeholder charm that contains helpful charm libraries curated by the
+  Canonical OSM charm team.
+summary: Collection of Charm Libraries for OSM Network Functions.
