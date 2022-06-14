@@ -510,7 +510,7 @@ class DebugMode(Object):
         pod_ip: str,
         user: str = "root",
         workspace_path: str = "/debug.code-workspace",
-    ) -> None:
+    ) -> str:
         return f"code --remote ssh-remote+{user}@{pod_ip} {workspace_path}"
 
     def _restart(self):

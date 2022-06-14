@@ -6,8 +6,7 @@ import json
 from unittest.mock import Mock
 
 import pytest
-
-from lib.charms.osm_libs.v0.osm_config import OsmConfig
+from charms.osm_libs.v0.osm_config import OsmConfig
 
 
 @pytest.fixture
