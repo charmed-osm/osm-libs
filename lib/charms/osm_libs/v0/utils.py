@@ -136,7 +136,7 @@ LIBAPI = 0
 
 # Increment this PATCH version before using `charmcraft publish-lib` or reset
 # to 0 if you are raising the major API version
-LIBPATCH = 1
+LIBPATCH = 2
 
 logger = logging.getLogger(__name__)
 
@@ -164,14 +164,14 @@ def check_container_ready(container: Container) -> None:
 
 
 def check_service_active(container: Container, service_name: str) -> None:
-    """Check if the nbi service is running.
+    """Check if the service is running.
 
     Args:
         container (Container): Container to be checked.
         service_name (str): Name of the service to check.
 
     Raises:
-        CharmError: if nbi service is not running.
+        CharmError: if the service is not running.
     """
     if service_name not in container.get_plan().services:
         raise CharmError(f"{service_name} service not configured yet", WaitingStatus)
